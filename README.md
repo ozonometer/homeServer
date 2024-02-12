@@ -34,9 +34,12 @@ CREATE TABLE sumpump (
 );
 
 
-to run the server application daemonized (in the background) install pm2
+to run the server application daemonized (in the background) install pm2 version 3.0.0
+Note: newest version of pm2 will not work with connection refused error
 
-sudo npm install -g pm2
+sudo -i
+
+npm install https://github.com/Unitech/PM2/archive/3.0.0.tar.gz -g
 
 pm2 start app.js
 
