@@ -1,7 +1,7 @@
 let helper = require('../config/helper.js');
 const mariadb = require('mariadb');
 const pool = mariadb.createPool({
-    host: '192.168.1.220',
+    host: '127.0.0.1',
     user:'****',
     password: '****',
     connectionLimit: 5
