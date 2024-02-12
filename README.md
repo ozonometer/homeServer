@@ -34,16 +34,24 @@ CREATE TABLE sumpump (
 );
 
 
-to run server application daemonized (in background)
-install pm2
+to run the server application daemonized (in the background) install pm2
+
 sudo npm install -g pm2
-start pm2 app.js
+
 pm2 start app.js
-command to generate command that will lunch PM2 on boot
-pm2 startup systemd
+
+command to generate a command that will launch PM2 on boot
+
+pm2 startup systems
+
 generated command, copy and run it
+
 sudo env PATH=$PATH:/usr/local/bin /usr/local/lib/node_modules/pm2/bin/pm2 startup systemd -u admin --hp /home/admin
-command to to save the current state of PM2 (with app.js running) in a dump file
+
+command to save the current state of PM2 (with app.js running) in a dump file
+
 pm2 save
+
 check anytime the status of your application with 
+
 pm2 list, pm2 status or pm2 show.
